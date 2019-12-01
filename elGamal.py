@@ -5,7 +5,7 @@ def main():
     # the range of numbers is usually a lot bigger but for the sake of the problem
     # i just kept it small so computation does not take that long
 
-    q = random.randint(15000, 25000)
+    q = random.randint(15000000, 25000000)
     g = random.randint(2, q)
     # private key of sender 
     keyPr = generatePrimeNum(q) 
@@ -39,7 +39,7 @@ def generatePrimeNum(q):
     # for the sake of runtime and demonstration will choose a small prime number
     number = 6
     while not isPrime(number):
-        number = random.randint(15000, q - 2)
+        number = random.randint(15000000, q - 2)
     return number
 
 
